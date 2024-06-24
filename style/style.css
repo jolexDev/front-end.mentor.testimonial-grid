@@ -92,9 +92,9 @@ img {
 
 .cards {
   border: 1px solid transparent;
-  border-radius: 0.5em;
+  border-radius: 0.6em;
   padding: 0 2em 0;
-  box-shadow: 0 1px 3px black;
+  box-shadow: 0 1px 15px hsl(0, 0%, 81%);
 }
 
 .card_header {
@@ -131,20 +131,26 @@ img {
   color: hsl(219, 29%, 14%);
 }
 
-.return_button {
-  background: hsl(219, 29%, 14%);
-  display: inline-block;
-  margin: 0 auto;
-  color: white;
-  font-size: 1.2em;
-  font-weight: 500;
-  padding: 0.6em 2em;
-  cursor: pointer;
-  transition: 0.1s background;
-  text-decoration: none;
-  border-radius: 0.5em;
-}
+@media (min-width: 800px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-.return_button:hover {
-  background: hsl(217, 19%, 35%);
+  .card-1 {
+    grid-column: span 2;
+  }
+
+  .card-3 {
+    grid-row: 2;
+  }
+
+  .card-4 {
+    grid-row: 2;
+    grid-column: span 2;
+  }
+
+  .card-5 {
+    grid-row: span 2;
+  }
 }
