@@ -57,13 +57,13 @@ img {
 }
 
 .cards:nth-child(1) {
-  background: url(../images/bg-pattern-quotation.svg) no-repeat top right;
+  background: url(../images/bg-pattern-quotation.svg) no-repeat 80% 0;
   background-color: hsl(263, 55%, 52%);
   background-origin: content-box;
 }
 
 .cards:nth-child(1) img {
-  border: 0.2em solid hsl(262, 43%, 62%);
+  border: 0.2em solid hsl(263, 41%, 64%);
 }
 
 .cards:nth-child(2) {
