@@ -30,4 +30,120 @@ html {
 body {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 0.8125rem;
+  background: hsl(210, 46%, 95%);
+}
+
+main {
+  margin-top: 5em;
+}
+
+p,
+h4 {
+  margin: 0;
+}
+
+img {
+  border-radius: 2rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+}
+
+.cards:nth-child(1) {
+  background: url(../images/bg-pattern-quotation.svg) no-repeat top right;
+  background-color: hsl(263, 55%, 52%);
+  background-origin: content-box;
+}
+
+.cards:nth-child(1) img {
+  border: 0.2em solid hsl(262, 43%, 62%);
+}
+
+.cards:nth-child(2) {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.cards:nth-child(3) {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.cards:nth-child(4) {
+  background-color: hsl(219, 29%, 14%);
+}
+
+.cards:nth-child(4) img {
+  border: 0.2em solid hsl(263, 55%, 52%);
+}
+
+.cards:nth-child(5) {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.dark_color {
+  color: hsl(217, 19%, 35%);
+}
+
+.cards {
+  border: 1px solid transparent;
+  border-radius: 0.5em;
+  padding: 0 2em 0;
+}
+
+.card_header {
+  color: white;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+.card_text {
+  padding-bottom: 3em;
+  margin-top: 1.5em;
+  color: white;
+  opacity: 70%;
+}
+
+.flex-author {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding-top: 2em;
+  margin-bottom: 1.5em;
+}
+
+.author-name {
+  color: white;
+}
+
+.author-status {
+  color: white;
+  opacity: 50%;
+}
+
+.dark_font {
+  color: hsl(219, 29%, 14%);
+}
+
+.return_button {
+  background: hsl(219, 29%, 14%);
+  display: inline-block;
+  margin: 0 auto;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 500;
+  padding: 0.6em 2em;
+  cursor: pointer;
+  transition: 0.1s background;
+  text-decoration: none;
+  border-radius: 0.5em;
+}
+
+.return_button:hover {
+  background: hsl(217, 19%, 35%);
 }
